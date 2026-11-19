@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KubeEcho")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c9e6d69732f70bc3260ad20ba30a311213b25a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6e2b4c4e4e31d15efdfee142d529ac3acdcfcd0")]
 [assembly: System.Reflection.AssemblyProductAttribute("KubeEcho")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KubeEcho")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

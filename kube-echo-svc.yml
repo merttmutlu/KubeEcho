@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: kube-echo-svc
+  name: kube-echo-db
+spec:
+  ports:
+  - name: database
+    port: 8081
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: kube-echo
+    tier: database
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: kube-echo-svc
+  name: kube-echo-be
+spec:
+  ports:
+  - name: backend
+    port: 8082
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: kube-echo
+    tier: backend
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: kube-echo-svc
+  name: kube-echo-fe
+spec:
+  ports:
+  - name: frontend
+    port: 8083
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: kube-echo
+    tier: frontend
+  type: ClusterIP
